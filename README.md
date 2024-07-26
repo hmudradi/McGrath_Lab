@@ -60,23 +60,23 @@ View Results: The radar charts will be displayed, and you can save them by uncom
 
 2)get_metrics(self): Returns a dictionary of calculated metrics.
 
->by_track(df, uid='uid', metric='acc')
 ##### Groups data by track and calculates specified metric for each track.
+>by_track(df, uid='uid', metric='acc')
 
->by_track_sex(df, uid='uid', metric='acc')
 ##### Groups data by track and gender, and calculates specified metric for each subset.
+>by_track_sex(df, uid='uid', metric='acc')
 
->by_track_count(df, uid='uid', metric='acc')
 ##### Counts true positives, true negatives, false positives, and false negatives by track.
+>by_track_count(df, uid='uid', metric='acc')
 
->metrics_by_Tk_Id(df, flag=0, metric='acc')
 ##### Calculates specified metric for each track, optionally splitting by gender.
+>metrics_by_Tk_Id(df, flag=0, metric='acc')
 
-> columns_to_dict(df, key_col, value_col)
 ##### Converts two columns of a DataFrame into a dictionary.
+> columns_to_dict(df, key_col, value_col)
 
->create_radar_chart(metrics_dict1, metrics_dict2, title)
 ##### Creates and displays a radar chart comparing two sets of metrics.
+>create_radar_chart(metrics_dict1, metrics_dict2, title)
 
 ### Data Preparation
 The data frames are created by reading CSV files. Unique IDs and track IDs are generated for grouping and metric calculation. Ensure that the data frames have the required columns (label, prediction, uid, Tk_Id, etc.) before running the script.
